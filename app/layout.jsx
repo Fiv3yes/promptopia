@@ -8,11 +8,11 @@ export const metadata = {
     description: 'Discover & Share AI Prompts'
 }    
 
-
 const Rootlayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
+            <Provider>
             <div className='main'>
                 <div className='gradient' />
             </div>
@@ -21,8 +21,9 @@ const Rootlayout = ({ children }) => {
                 <Nav />
                 {children}
             </main>
+            </Provider>
         </body>
-    </html>
+    </html> 
   )
 }
 
